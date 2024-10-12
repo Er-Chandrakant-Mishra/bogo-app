@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   unitInputs.forEach((input) => {
     input.addEventListener("change", () => {
       const selectedValue = input.value;
-      totalDisplay.textContent = ` Total: $${selectedValue}.00 USD`;
+      totalDisplay.textContent =` Total: $${selectedValue}.00 USD`;
     });
   });
 });
