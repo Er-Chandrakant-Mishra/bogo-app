@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.bogo-heading {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    position: relative;
+    margin: 20px 0;
+    font-weight: bold;  
+    text-align: center;
+    color: #e86a92;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}         
+.bogo-heading::before,
+.bogo-heading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    height: 1px;
+    background-color:#666;
+ 
+}
+
+.bogo-heading::before {
+    left: 0;
+}
+
+.bogo-heading::after {
+    right: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+
+
+.option {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.unit-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount {
+    background-color: #e86a92;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border:darkgreen;
+}
+
+.price-now {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.small-text {
+    color: #666;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    padding: 2px 5px;
+    border: 1px solid green;  
+    display: inline-block; 
+}
+
+
+.selection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.item {
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.most-popular {
+    background-color: #e86a92;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    float: right;
+    margin-top:-5%;
+}
+
+.total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #e86a92;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .bogo-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  .option.popular {
+    border-color: #e86a92; 
+  }
+  
+  .most-popular-label {
+    background-color: #e86a92;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    float: right;
+    margin-top:-8%;
+}
+  
+  
+  .price {
+    margin-top: 10px;
+  }
+  
+  .price-now {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .price-old {
+    text-decoration: line-through;
+    margin-left: 10px;
+  }
+  
+  .price-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .selection {
+    margin-top: 10px;
+  }
+  
+  .selection .item {
+    margin-bottom: 10px;
+  }
+  
+  .total {
+    text-align: center;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e86a92;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .price-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+  }
+  
+  .price-now {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .price-old {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #888; 
+  }
+  
+  .selection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .size-selection {
+    margin-bottom: 15px;
+  }
+  
+  .color-container {
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  select {
+    padding: 5px;
+    width: 100%;
+    max-width: 150px; /* Set max width to make it look neat */
+  }
+  
+  
+  .selection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between rows */
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px; 
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  select {
+    padding: 5px;
+    width: 100%;
+    max-width: 150px; 
+  }
+  .delivery{
+    font-size: medium;
+    float: left;
+  }
+  #total{
+    font-size: medium;
+    float:right;
+    border: #e86a92 2px solid;
+  }
+  #test{
+    float: right;
+    color: #888 ;
+  }

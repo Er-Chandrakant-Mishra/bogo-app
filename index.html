@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="bogo-heading">
+      <h5>YAY! It's BOGO</h5>
+    </div>
+
+    <!-- 1 Unit Option -->
+    <div class="option">
+      <input type="radio" name="unit" id="unit1" value="10" checked />
+      <span>1 Unit</span>
+      <span class="discount">10% Off</span>
+      <label for="unit1">
+        <div class="unit-info"></div>
+        <div class="price price-right">
+          <span class="price-now">$10.00 USD</span>
+          <span class="price-old">$24.00 USD</span>
+        </div>
+        <span class="small-text" style="border: 1px solid #1a2421; padding: 2px;">
+          Standard Price
+        </span>
+      </label>
+    </div>
+
+    <!-- 2 Unit Option -->
+    <div class="option popular">
+      <div class="most-popular-label">MOST POPULAR</div>
+      <input type="radio" name="unit" id="unit2" value="18" />
+      <span>2 Unit</span>
+      <span class="discount">20% Off</span>
+      <label for="unit2">
+        <div class="unit-info"></div>
+        <div class="price price-right">
+          <span class="price-now">$18.00 USD</span>
+          <span class="price-old">$24.00 USD</span>
+        </div>
+      </label>
+
+      <!-- Size and Color Selection -->
+      <div class="selection">
+        <div class="row">
+          <div class="item">
+            <label>Size</label>
+           <select id="size1">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <div class="item">
+            <label>Color</label>
+            <select id="color1">
+             #1 <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="yellow">Yellow</option>
+            </select>
+          </div>
+        </div>
+      
+        <!-- Row for Size #2 and Color #2 -->
+        <div class="row">
+          <div class="item">
+            <select id="size2">
+            <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <div class="item">
+            <select id="color2">
+              <option value="">Color</option>
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="yellow">Yellow</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- 3 Unit Option -->
+    <div class="option">
+      <input type="radio" name="unit" id="unit3" value="24" />
+      <span>3 Unit</span> 
+      <sup class="discount">30% Off</sup>
+      <label for="unit3">
+        <div class="unit-info"></div>
+        <div class=" price-right">
+          <span class="price-now">$24.00 USD</span>
+          <span class="price-old">$24.00 USD</span>
+        </div>
+      </label>
+    </div>
+
+    <!-- Total and Add to Cart -->
+    <div class="total">
+      <div class="delivery">
+      <span >Free Delivery</span>
+    </div>
+       <span id="total">$10.00 USD</span>
+      <button id="addToCart"> + Add to Cart</button>
+      
+    </div>
+    <span id="test">@ Powered by Pumber</span>
+  </div>
+
+  <script src="demo.js"></script>
+</body>
+</html>
